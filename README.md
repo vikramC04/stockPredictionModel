@@ -18,11 +18,5 @@ This repository contains a project focused on predicting the closing prices of t
 
 To clone and run this project, you'll need to have [Git](https://git-scm.com) and [Python](https://www.python.org/) installed on your machine. 
 
-```bash
-# Clone the repository
-git clone https://github.com/your-username/stockPredictionModel.git
-
-# Navigate to the project directory
-cd stockPredictionModel
 
 

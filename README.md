@@ -1,18 +1,28 @@
-# Stock Closing Price Prediction
+# Tech Stock Prediction Model
 
-The stock prediction model is a project that revolves around predicting the adjusted closing price of stocks using deep learning neural networks that have been fitted with LSTM cells. The model takes the last 75
-days of closing data and uses it to predict the current closing price. The predictions are then visually displayed using matplotlib to guage the viability of the model.
+This repository contains a project focused on predicting the closing prices of tech stocks using a machine learning model. The model was developed with a strong emphasis on accuracy, trend analysis, and visualization, achieving a root mean squared loss error of 0.035.
 
-## How it Works
+## Features
 
-### Model production (stock_pred_dev.ipynb)
+- **High-Accuracy Prediction:** The model predicts the closing prices of tech stocks with a root mean squared loss error of 0.035.
+  
+- **Comprehensive Trend Analysis:** Utilized Kernel Density Estimation (KDE) plots, scatter plots, and histograms to analyze stock trends and identify the optimal classification model.
 
-The core functionality of predicting the closing price is located inside `stock_pred_dev.ipynb`. The file uses stock closing data found at https://www.kaggle.com/datasets/borismarjanovic/price-volume-data-for-all-us-stocks-etfs, to train a deep learning model using LSTMS to predict closing price. This file also contains stock data analysis to see the relationship between stock closing prices, volume, price variance etc. 
+- **LSTM-Based RNN Implementation:** The final model is a Recurrent Neural Network (RNN) with Long Short-Term Memory (LSTM) cells, which uses historical closing price data to predict future prices, capturing long-term dependencies in the data.
 
-### Model (seq-2LSTM-DenseLinOutput)
+- **Data Visualization:** Employed Matplotlib and NumPy to visualize and compare actual versus projected closing prices, providing insights into model performance and areas for improvement.
 
-`seq-2LSTM-DenseLinOutput` contains the model that is used for predicting the closing prices. 
+- **Continuous Model Evaluation:** Regularly assessed and optimized the model to ensure consistent and reliable predictions across varying market conditions.
 
-## Model Usage requirements
+## Installation
 
-In order to use the deep learning model accurately, the input shape must be (75, 1) with the array being made up of the previous 75 days of adjusted closing price. The y or the dependant variable should be the current closing price. 
+To clone and run this project, you'll need to have [Git](https://git-scm.com) and [Python](https://www.python.org/) installed on your machine. 
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/stockPredictionModel.git
+
+# Navigate to the project directory
+cd stockPredictionModel
+
+
